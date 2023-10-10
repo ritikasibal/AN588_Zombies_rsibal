@@ -13,6 +13,12 @@ output:
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```
 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Meq_Fv8UlC8?si=wujMGTxq61jMLcpF" data-external= "1" > </iframe>
+
+<br> *Got information about embedded video from: https://stackoverflow.com/questions/38517236/youtube-video-in-r-markdown*
+</center>
+
 ## Question 1
 ### Calculate the population mean and standard deviation for each quantitative random variable (height, weight, age, number of zombies killed, and years of education). NOTE: You will not want to use the built in var() and sd() commands as these are for samples.
 
