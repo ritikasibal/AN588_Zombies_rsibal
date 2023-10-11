@@ -217,6 +217,13 @@ for (x in 1:99){
   education_yrs_means <- c(education_yrs_means, mean(sample_zombies$years_of_education))
 }
 
+# Calculate the Mean for all 100 sample means
+(sample_height_mean <- mean(height_means))
+(sample_weight_mean <- mean(weight_means))
+(sample_age_mean <- mean(age_means))
+(sample_zombies_killed_mean <- mean(zombies_killed_means))
+(sample_education_yrs <- mean(education_yrs_means))
+
 # Calculate the SD for all 100 sample means
 (height_means_sd <- sd(height_means))
 (weight_means_sd <- sd(weight_means))
@@ -233,6 +240,6 @@ plot_hist_and_norm(education_yrs_means, "Education Means", education_yrs_means_s
 
 
 ```
-The sampling distributions, for the most part, all look normally distributed. For the previously not-normally distributed, it looks like after sampling the distribution looks more normal.
+The sampling distributions all look normally distributed. For the previously not-normally distributed, it looks like after sampling the distribution looks more normal.
 
 The sample sd values are also very similar to the SEM values we calculated in Question 5
