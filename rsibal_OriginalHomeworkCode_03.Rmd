@@ -210,11 +210,11 @@ for (x in 1:99){
   # Sample 30 from the population and calculate the sample means (this samples rows)
   sample_zombies <- slice_sample(zombies, n = 30, replace = FALSE)
   # Append the calculated means into the vector
-  height_means <- c(height_means, sample_zombies$height)
-  weight_means <- c(weight_means, sample_zombies$weight)
-  age_means <- c(age_means, sample_zombies$age)
-  zombies_killed_means <- c(zombies_killed_means, sample_zombies$zombies_killed)
-  education_yrs_means <- c(education_yrs_means, sample_zombies$years_of_education)
+  height_means <- c(height_means, mean(sample_zombies$height))
+  weight_means <- c(weight_means, mean(sample_zombies$weight))
+  age_means <- c(age_means, mean(sample_zombies$age))
+  zombies_killed_means <- c(zombies_killed_means, mean(sample_zombies$zombies_killed))
+  education_yrs_means <- c(education_yrs_means, mean(sample_zombies$years_of_education))
 }
 
 # Calculate the SD for all 100 sample means
